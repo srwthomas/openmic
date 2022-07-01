@@ -1,0 +1,21 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Open Mic Sign Up</h1>
+
+<% if user_signed_in? %>
+    <%= button_to "New Post", new_post_path, class: "btn-primary btn-lg" %>
+  <% end %>
+
+<% if user_signed_in? %>
+  <div id="posts">
+    <% @posts.each do |post| %>
+      <%= render post %>
+      <p>
+        <%= link_to "Show post", post %>
+      </p>
+    <% end %>
+<% else %>
+    <%= link_to "Sign Up", new_user_session_path %>
+  <% end %>
+
+</div>
