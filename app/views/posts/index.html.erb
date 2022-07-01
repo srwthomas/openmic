@@ -3,7 +3,7 @@
 <h1>Open Mic Sign Up</h1>
 
 <% if user_signed_in? %>
-    <%= button_to "New Post", new_post_path, class: "btn-primary btn-lg" %>
+    <%= link_to "New Post", new_post_path, class: "btn-primary btn-lg" %>
   <% end %>
 
 <% if user_signed_in? %>
