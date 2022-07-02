@@ -16,33 +16,42 @@ body {
 
 // Sections
 .title {
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
+  margin-top: 1em;
+  margin-bottom: 3em;
   h1 {
     font-weight: 900;
   }
 }
 
 .date {
-  padding-top: 2.5em;
-  padding-bottom: 2.5em;
+  margin-top: 1.5em;
   font-weight: 700;
 }
 
 .information {
-  padding-bottom: 2.5em;
-  padding-bottom: 2.5em;
+  margin-top: 3em;
+  margin-bottom: 3.5em;
   h3 {
-    font-weight: 700;
+    font-weight: 900;
+    font-size: 2em;
   }
   h5 {
     font-weight: 700;
+    font-size: 1.5em;
   }
 }
 
+.rules {
+  margin-bottom: 1.5em;
+}
+
 .cta {
-  padding-bottom: 4.5em;
+  margin-bottom: 4.5em;
   h3 {
     font-weight: 900;
   }
+}
+
+.btnIndex {
+  margin-bottom: 4.5em;
 }
