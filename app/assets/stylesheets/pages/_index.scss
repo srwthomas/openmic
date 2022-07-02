@@ -1,4 +1,4 @@
-
+// General Layout
 body {
   padding: 10px;
   background-image: url(https://images.unsplash.com/photo-1595971294624-80bcf0d7eb24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1738&q=80);
@@ -6,7 +6,25 @@ body {
   background-position: center;
  }
 
- .signUp {
-  color: white;
-  backdrop-filter: blur(3px);
- }
+.container {
+  color: antiquewhite;
+  letter-spacing: 0.3em;
+}
+
+// Sections
+.title {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+.date {
+  padding-bottom: 2.5em;
+}
+
+.information {
+  padding-bottom: 2.5em;
+}
+
+.cta {
+  padding-bottom: 4.5em;
+}

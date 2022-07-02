@@ -1,27 +1,33 @@
 <p style="color: green"><%= notice %></p>
 
 <div class="signUp" style="text-align: center">
+  <div class="titlePost"></div>
   <h1>Open Mic Sign Up</h1>
-
+  <div class="buttonSignUp">
   <% if user_signed_in? %>
       <%= link_to "Sign Up", new_post_path, class: "btn-primary btn-lg" %>
     <% end %>
-    <hr>
-  <% if user_signed_in? %>
-    <div id="posts">
-      <% @posts.each do |post| %>
-        <div class="container post">
-          <%= render post %>
-        </div>
-        <p>
-          <%# <% if @current_user == @post.user_id %>
-          <%= link_to "View", post %>
-          <%# <% end %>
-        </p>
-      <% end %>
-  <% else %>
-      <%= link_to "Sign Up", new_user_session_path %>
-    <% end %>
-
   </div>
+    <hr>
+      <div class="post-section">
+        <% if user_signed_in? %>
+          <div id="posts">
+            <% @posts.each do |post| %>
+              <div class="post">
+                <%= render post %>
+
+                <%# <% if user %>
+                <%= link_to "View", post %>
+                <%# <% end %>
+
+              </div>
+
+            <% end %>
+        <% else %>
+            <%= link_to "Sign Up", new_user_session_path %>
+          <% end %>
+
+        </div>
+    </div>
+  <hr>
 </div>

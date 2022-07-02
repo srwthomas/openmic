@@ -1,0 +1,36 @@
+.signUp {
+  color: white;
+  backdrop-filter: blur(3px);
+ }
+
+ .titlePost {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+ }
+
+ .buttonSignUp {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+ }
+
+ .post-section {
+  padding:10px;
+}
+
+ #posts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ }
+
+ .post {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  align-items: center;
+  position: relative;
+  border-width: 1em;
+  padding-top: 1.5em;
+  backdrop-filter: contrast(40%);
+}

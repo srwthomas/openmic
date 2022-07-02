@@ -1,7 +1,8 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @post %>
-
+<%# <% if current_user %>
+  <%= render @post %>
+<%# <% end %>
 <div>
   <%= link_to "Edit this post", edit_post_path(@post) %> |
   <%= link_to "Back to posts", posts_path %>

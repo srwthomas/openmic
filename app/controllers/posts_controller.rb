@@ -2,7 +2,7 @@ class PostsController < ApplicationController
   before_action :set_post, only: %i[ show edit update destroy ]
 
 
-  before_action :redirect_guest, except: [:show, :index]
+  before_action :redirect_guest, except: [:index]
   before_action :authorize_modification, only: [:edit, :update, :destroy]
 
   # GET /posts or /posts.json
@@ -64,6 +64,12 @@ class PostsController < ApplicationController
     end
   end
 
+  # def user
+  #   if (@user.id == current_user.id)
+  #     link_to "View", post
+  #   end
+  # end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_post
@@ -76,7 +82,7 @@ class PostsController < ApplicationController
     end
 
     def redirect_guest
-      redirect_to root_path unless user_signed_in?
+      redirect_to posts_path unless user_signed_in?
     end
 
     # def authorize_access
@@ -91,7 +97,9 @@ class PostsController < ApplicationController
 
     def authorize_modification
       user_id = Post.find(params[:id]).user_id
-      redirect_to root_path unless user_signed_in? &&
+      redirect_to posts_path unless user_signed_in? &&
                                    user_id == current_user.id
     end
+
+
 end
