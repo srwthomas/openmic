@@ -1,3 +1,4 @@
+// Post Index
 .signUp {
   color: white;
   backdrop-filter: blur(3px);
@@ -6,6 +7,9 @@
  .titlePost {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
+  h1 {
+    font-weight: 900;
+  }
  }
 
  .buttonSignUp {
@@ -32,5 +36,27 @@
   position: relative;
   border-width: 1em;
   padding-top: 1.5em;
-  backdrop-filter: contrast(40%);
+  // backdrop-filter: contrast(40%);
+}
+
+// Post Show
+.showCard {
+  text-align: center;
+  backdrop-filter: blur(5px);
+}
+
+// .buttonsShow {
+//   margin:1em;
+// }
+
+.editBtn {
+  margin: 1em;
+}
+
+.backBtn {
+  margin: 1em;
+}
+
+.deleteBtn {
+  margin: 1em;
 }
