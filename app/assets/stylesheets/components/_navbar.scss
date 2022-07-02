@@ -2,7 +2,23 @@
 
 .navbar-brand {
   color: antiquewhite;
-  a {
-    color: white;
-  }
+}
+
+.navbar-brand:hover {
+  color: purple;
+}
+
+.navbar-nav .nav-link {
+  color:white;
+  font-size: large;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.navbar-nav {
+  align-items: baseline;
+}
+
+.navbar-nav .nav-link:hover {
+  color: purple;
 }

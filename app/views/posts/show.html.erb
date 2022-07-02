@@ -6,10 +6,10 @@
     <%= render @post %>
   <%# <% end %>
     <div class="buttonsShow">
-    <%= link_to "Edit Submission", edit_post_path(@post), class: "btn btn-warning editBtn" %> |
-    <%= link_to "Back to SignUp List", posts_path, class: "btn btn-light backBtn" %>
+      <%= link_to "Edit Submission", edit_post_path(@post), class: "btn btn-warning editBtn" %>
+      <%= link_to "Back to SignUp List", posts_path, class: "btn btn-light backBtn" %>
 
-    <%= button_to "Destroy this Submission", @post, method: :delete, class: "btn btn-danger deleteBtn" %>
-  </div>
+      <%= button_to "Destroy this Submission", @post, method: :delete, class: "btn btn-danger deleteBtn" %>
+    </div>
   </div>
 </div>

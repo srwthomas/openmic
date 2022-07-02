@@ -8,29 +8,27 @@
 
   <div class="buttonSignUp">
   <% if user_signed_in? %>
-      <%= link_to "Sign Up", new_post_path, class: "btn-primary btn-lg" %>
+      <%= link_to "Sign Up Here", new_post_path, class: "btn-primary btn-lg" %>
     <% end %>
   </div>
     <hr>
       <div class="post-section">
-        <% if user_signed_in? %>
-          <%# <div id="posts"> %>
-            <% @posts.each do |post| %>
-              <div class="post">
-                <%= render post %>
+        <h2>Current Submissions</h2>
+          <% if user_signed_in? %>
+              <% @posts.each do |post| %>
+                <div class="post">
+                  <%= render post %>
 
-                <%# <% if user %>
-                <%= link_to "View", post %>
-                <%# <% end %>
+                  <%# <% if user %>
+                  <%= link_to "View", post, class: "btn btn-outline-primary btn-sm" %>
+                  <%# <% end %>
 
-              </div>
+                </div>
 
+              <% end %>
+          <% else %>
+              <%= link_to "Sign Up", new_user_registration_path, class: "btn-primary btn-lg" %>
             <% end %>
-        <% else %>
-            <%= link_to "Sign Up", new_user_registration_path, class: "btn-primary btn-lg" %>
-          <% end %>
-
-        <%# </div> %>
     </div>
   <hr>
 </div>

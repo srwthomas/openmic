@@ -26,13 +26,6 @@
   align-items: center;
 }
 
-//  #posts {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   flex-direction: column;
-//  }
-
  .post {
   display: flex;
   flex-direction: column;
@@ -50,12 +43,14 @@
 // Post Show
 .showCard {
   text-align: center;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
   backdrop-filter: blur(5px);
 }
 
-// .buttonsShow {
-//   margin:1em;
-// }
+.buttonsShow {
+  padding-top: 1.5em;
+}
 
 .editBtn {
   margin: 1em;
