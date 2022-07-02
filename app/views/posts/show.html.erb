@@ -1,15 +1,15 @@
 <div class="container">
-<p style="color: green"><%= notice %></p>
+<p style="color: chartreuse; font-size: 1.5em;"><%= notice %></p>
 <h1 class="titlePost" style="text-align:center;">Submission</h1>
 <div class="showCard">
   <%# <% if current_user %>
     <%= render @post %>
   <%# <% end %>
     <div class="buttonsShow">
-    <%= link_to "Edit this Submission", edit_post_path(@post), class: "btn btn-warning editBtn" %> |
-    <%= link_to "Back to SignUp", posts_path, class: "btn btn-light backBtn" %>
+    <%= link_to "Edit Submission", edit_post_path(@post), class: "btn btn-warning editBtn" %> |
+    <%= link_to "Back to SignUp List", posts_path, class: "btn btn-light backBtn" %>
 
-    <%= button_to "Destroy this post", @post, method: :delete, class: "btn btn-danger deleteBtn" %>
+    <%= button_to "Destroy this Submission", @post, method: :delete, class: "btn btn-danger deleteBtn" %>
   </div>
   </div>
 </div>

@@ -2,11 +2,13 @@
 .signUp {
   color: white;
   backdrop-filter: blur(3px);
+  text-align: center;
  }
 
  .titlePost {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
+  text-align: center;
   h1 {
     font-weight: 900;
   }
@@ -19,24 +21,30 @@
 
  .post-section {
   padding:10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
- #posts {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
- }
+//  #posts {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: column;
+//  }
 
  .post {
   display: flex;
   flex-direction: column;
   height: 250px;
+  justify-content: center;
+  width: 300px;
   align-items: center;
-  position: relative;
   border-width: 1em;
-  padding-top: 1.5em;
-  // backdrop-filter: contrast(40%);
+  background-color: grey;
+  border-radius: 15%;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 // Post Show
@@ -55,8 +63,37 @@
 
 .backBtn {
   margin: 1em;
+  text-align: center;
 }
 
 .deleteBtn {
   margin: 1em;
+}
+
+// Post New
+.newForm {
+  text-align: center;
+}
+
+.formSubmit {
+  margin-top: 1em;
+  text-align: center;
+  input {
+    background-color: rgb(40, 167 , 70);
+    border: none;
+    color: antiquewhite
+
+  }
+}
+
+// Post Edit
+.editForm {
+  margin-top: 2.5em;
+  text-align: center;
+  margin-bottom: 2.5em;
+}
+
+.label {
+  font-size: 1.5em;
+  font-weight: 600;
 }

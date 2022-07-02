@@ -10,23 +10,24 @@
       </ul>
     </div>
   <% end %>
-
-  <div>
+<div>
+  <div class="label">
     <%= form.label :name, style: "display: block" %>
     <%= form.text_field :name %>
   </div>
 
-  <div>
+  <div class="label">
     <%= form.label :instrument, style: "display: block" %>
     <%= form.text_field :instrument %>
   </div>
 
-  <div>
+  <div class="label">
     <%= form.label :genre, style: "display: block" %>
     <%= form.text_field :genre %>
   </div>
 
-  <div>
+  <div class="formSubmit btn btn-lg btn-success">
     <%= form.submit %>
   </div>
+</div>
 <% end %>
