@@ -9,7 +9,7 @@ body {
 
 .container {
   color: antiquewhite;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.2em;
   backdrop-filter: blur(3px);
   text-align: center;
 }
@@ -39,6 +39,9 @@ body {
     font-weight: 700;
     font-size: 1.5em;
   }
+}
+.benefits {
+  margin-top: 2.5em;
 }
 
 .rules {
