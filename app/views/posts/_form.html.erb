@@ -18,12 +18,15 @@
 
   <div class="label">
     <%= form.label :instrument, style: "display: block" %>
+    <div class="bandInfo">
+      <p>If you want to perform with a band, please notify event administration</p>
+    </div>
     <%= form.text_field :instrument %>
   </div>
 
   <div class="label">
     <%= form.label :genre, style: "display: block" %>
-    <%= form.select :genre, Post::GENRES %>
+    <%= form.select :genre, Post::GENRES, class: "form-select" %>
   </div>
 
   <div class="formSubmit btn btn-lg btn-success">

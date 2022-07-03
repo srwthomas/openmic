@@ -29,13 +29,13 @@
  .post {
   display: flex;
   flex-direction: column;
-  height: 250px;
+  height: 180px;
   justify-content: center;
-  width: 300px;
+  width: 350px;
   align-items: center;
   border-width: 1em;
   background-color: grey;
-  border-radius: 15%;
+  border-radius: 10%;
   margin-top: 2em;
   margin-bottom: 2em;
 }
@@ -68,16 +68,27 @@
 // Post New
 .newForm {
   text-align: center;
+  padding-top: 1.5em;
+}
+
+.bandInfo {
+  font-size: 0.7rem;
+  font-style: italic;
 }
 
 .formSubmit {
   margin-top: 1em;
   text-align: center;
+  margin-top: 1.5em;
   input {
     background-color: rgb(40, 167 , 70);
     border: none;
     color: antiquewhite
   }
+}
+
+#post_genre {
+  padding: 0.2em;
 }
 
 // Post Edit
@@ -90,4 +101,5 @@
 .label {
   font-size: 1.5em;
   font-weight: 600;
+  padding-top: 1em;
 }
