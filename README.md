@@ -9,7 +9,7 @@ LiveCode Deployed at:
   
 
 
-* System dependencies/ Configuration *
+* System dependencies/ Configuration 
 
     Ruby version "3.0.3"
 
