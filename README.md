@@ -5,20 +5,20 @@
 
 LiveCode Deployed at:
 
-  https://luusmuus.herokuapp.com/
+    https://luusmuus.herokuapp.com/
   
 
 
 * System dependencies/ Configuration *
 
-  Ruby version "3.0.3"
+    Ruby version "3.0.3"
 
-  "rails", "~> 7.0.2", ">= 7.0.2.4"
+    "rails", "~> 7.0.2", ">= 7.0.2.4"
 
-  'rails_admin', '~> 3.0'
+    'rails_admin', '~> 3.0'
    
 
 * Database 
   
-  db:migrate
+    db:migrate
   
