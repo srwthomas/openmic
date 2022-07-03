@@ -1,17 +1,10 @@
 Rails.application.routes.draw do
-  resources :posts
   devise_for :users
-
-
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   root to: 'main#index'
 
-  # get '/posts/new', to: 'new#post', as: 'New Post'
+  resources :posts
 
-  # Defines the root path route ("/")
-  # root "articles#index"
-  # devise_scope :user do
-  #   get '/',  :to => 'destroy_user_session_path'
-  # end
+  mount RailsAdmin::Engine => '/adminlmom91fnfxw6uuke8y8pzbnueiq35hg8m1buqh5w24dvu2x0y8pjriv53jd7l182', as: 'rails_admin'
+
 end
