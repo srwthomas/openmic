@@ -23,7 +23,7 @@
 
   <div class="label">
     <%= form.label :genre, style: "display: block" %>
-    <%= form.text_field :genre %>
+    <%= form.select :genre, Post::GENRES %>
   </div>
 
   <div class="formSubmit btn btn-lg btn-success">
