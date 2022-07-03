@@ -1,24 +1,24 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+  Simple Open Mic Event Submission's Website with basic Admin management and overview functionality 
 
-Things you may want to cover:
 
-* Ruby version
+LiveCode Deployed at:
 
-* System dependencies
+  https://luusmuus.herokuapp.com/
+  
 
-* Configuration
 
-* Database creation
+* System dependencies/ Configuration *
 
-* Database initialization
+  Ruby version "3.0.3"
 
-* How to run the test suite
+  "rails", "~> 7.0.2", ">= 7.0.2.4"
 
-* Services (job queues, cache servers, search engines, etc.)
+  'rails_admin', '~> 3.0'
+   
 
-* Deployment instructions
-
-* ...
+* Database 
+  
+  db:migrate
+  
