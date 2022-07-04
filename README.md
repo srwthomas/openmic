@@ -22,6 +22,8 @@ LiveCode Deployed at:
     'devise'
     
     'pg'
+    
+    'sass-rails'
    
 
 * To Clone & Run 
