@@ -31,6 +31,8 @@ gem "jbuilder"
 
 gem "devise"
 
+gem "dotenv"
+
 gem 'sass-rails'
 
 # Use Redis adapter to run Action Cable in production
