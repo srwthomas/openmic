@@ -9,10 +9,7 @@ gem "rails", "~> 7.0.2", ">= 7.0.2.4"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
-# Use pg as the database for Active Record
-gem "pg"
 
-gem 'rails_admin', '~> 3.0'
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
@@ -29,11 +26,18 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
+# Added gems
 gem "devise"
 
 gem "dotenv"
 
 gem 'sass-rails'
+
+gem 'rails_admin', '~> 3.0'
+
+# Use pg as the database for Active Record
+gem "pg"
+
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
