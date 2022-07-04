@@ -19,6 +19,8 @@ LiveCode Deployed at:
     
     'dotenv'
     
+    'devise'
+    
     'pg'
    
 
