@@ -34,5 +34,7 @@ LiveCode Deployed at:
     
     create .env file, with a variable (ROUTE_LINK="X"), and create your custom admin url link 
     
+    rails s
+    
     
   
