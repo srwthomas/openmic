@@ -16,6 +16,8 @@
 
           <% if user_signed_in? %>
           <h2>Current Registrations</h2>
+            <h5>Equipment</h5>
+            <p>Roland keyboard, electronic and acoustic guitar, monitor, speaker, 9 track mixer with compression, 2 sennheiser microphones with stands. (All with cables not wireless)</p>
               <% @posts.each do |post| %>
                 <div class="post">
                   <%= render post %>
