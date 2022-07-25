@@ -13,26 +13,21 @@
   </div>
     <hr>
       <div class="post-section">
-
-          <% if user_signed_in? %>
+        <% if user_signed_in? %>
           <h2>Current Registrations</h2>
             <h5>Equipment</h5>
             <p>Roland keyboard, electronic and acoustic guitar, monitor, speaker, 9 track mixer with compression, 2 sennheiser microphones with stands. (All with cables not wireless)</p>
               <% @posts.each do |post| %>
                 <div class="post">
                   <%= render post %>
-
-                  <%# <% if user %>
                   <%= link_to "View", post, class: "btn btn-outline-primary btn-sm" %>
-                  <%# <% end %>
-
                 </div>
               <% end %>
           <% else %>
               <hr>
               <h4 style="margin-bottom:1.5em;">Sign up with your email and a simple password to register</h4>
               <%= link_to "Sign Up", new_user_registration_path, class: "btn-primary btn-lg" %>
-            <% end %>
+          <% end %>
     </div>
   <hr>
  <a href = "mailto: sararickt@gmail.com" class="btn btn-warning">Send Email</a>
