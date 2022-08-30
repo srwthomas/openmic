@@ -1,7 +1,7 @@
 // General Layout
 body {
   width: 100vw;
-  min-height: 100vh;
+  min-height: auto;
   overflow-x: scroll;
 
   // min-height:100vh;
@@ -77,8 +77,6 @@ body {
 @media only screen and (max-width: 600px) {
   body {
     background-image: url("open-mobile.png");
-      background-position: center center;
-      background-size: cover;
       overflow-x: scroll;
   }
 
