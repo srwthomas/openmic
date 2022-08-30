@@ -1,8 +1,6 @@
 <div class="navbar navbar-expand-sm" style="display:flex;">
   <div class="container-fluid">
     <%= link_to "Luus Muus", "/", class: "navbar-brand" %>
-     <%# <% image_tag ("http://cdn.shopify.com/s/files/1/0586/3827/0672/products/Luus-Muus-Gift-Card.png?v=1626674261"), style: 'width: 150px;' %>
-    <%# <% end %>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -17,14 +15,14 @@
           <li class="nav-item active">
             <%= link_to "Registrations", posts_path, class: "nav-link" %>
           </li>
-           <li class="nav-item active">
+          <li class="nav-item active">
             <%= button_to "Log Out", destroy_user_session_path, method: :delete, class: "btn-danger btn btn-sm" %>
           </li>
-            </div>
+          </div>
         <% else %>
-          <li class="nav-item">
-            <%= link_to "Login", new_user_session_path, class: "nav-link btn btn-sm btn-primary" %>
-          </li>
+            <li class="nav-item">
+              <%= link_to "Login", new_user_session_path, class: "nav-link btn btn-sm btn-primary" %>
+            </li>
         <% end %>
       </ul>
     </div>

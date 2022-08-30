@@ -60,20 +60,13 @@ body {
 
 // media queries
 
+// mobile screens
+
 @media only screen and (max-width: 600px) {
   .container {
     background-image: url("open-mobile.png");
     background-position: center center;
     background-attachment: fixed;
     background-size: auto;
-
-    // overflow-x: scroll;
   }
-  // .navbar {
-  //   background-color: grey;
-  // }
-
-  // .footer {
-  //   background-color: grey;
-  // }
 }
