@@ -4,16 +4,15 @@ body {
   // -webkit-background-size: cover;
   padding: 10px;
   background-image: url(https://images.unsplash.com/photo-1595971294624-80bcf0d7eb24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1738&q=80);
-  background-attachment: fixed;
-  background-position: center center;
-  background-size: cover;
+    background-position: center center;
+    background-size: cover;
     background-attachment: fixed;
     z-index: 0;
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    // top: 0;
+    // right: 0;
+    // bottom: 0;
+    // left: 0;
   // font-family: 'Poppins', sans-serif;
  }
 
@@ -74,6 +73,8 @@ body {
 @media only screen and (max-width: 600px) {
   body {
     background-image: url("open-mobile.png");
+      background-position: center center;
+      background-size: cover;
   }
 
 }
