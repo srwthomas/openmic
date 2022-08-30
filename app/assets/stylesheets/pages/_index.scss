@@ -1,8 +1,8 @@
 // General Layout
 body {
-  min-height: 987px;
-  width: 100%;
-  padding: 10px;
+  // min-height: 987px;
+  // width: 100%;
+  // padding: 10px;
   background-image: url(https://images.unsplash.com/photo-1595971294624-80bcf0d7eb24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1738&q=80);
   background-position: center center;
   background-attachment: fixed;
@@ -17,6 +17,10 @@ body {
   // min-height: auto;
   // overflow-x: scroll;
  }
+
+html {
+  min-height: 987px;
+}
 
 .container {
   color: antiquewhite;
