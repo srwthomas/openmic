@@ -2,6 +2,8 @@
 body {
   width: 100vw;
   min-height: 100vh;
+  overflow-x: scroll;
+
   // min-height:100vh;
   // -webkit-background-size: cover;
   padding: 10px;
@@ -77,6 +79,7 @@ body {
     background-image: url("open-mobile.png");
       background-position: center center;
       background-size: cover;
+      overflow-x: scroll;
   }
 
 }
