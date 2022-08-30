@@ -1,8 +1,8 @@
 // General Layout
-body {
-  width: 100vw;
-  min-height: auto;
-  overflow-x: scroll;
+html {
+  // width: 100vw;
+  // min-height: auto;
+  // overflow-x: scroll;
 
   // min-height:100vh;
   // -webkit-background-size: cover;
@@ -74,10 +74,10 @@ body {
 
 // media queries
 
-@media only screen and (max-width: 600px) {
-  body {
-    background-image: url("open-mobile.png");
-      overflow-x: scroll;
-  }
+// @media only screen and (max-width: 600px) {
+//   body {
+//     background-image: url("open-mobile.png");
+//       overflow-x: scroll;
+//   }
 
-}
+// }
