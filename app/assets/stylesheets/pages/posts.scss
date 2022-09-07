@@ -32,6 +32,7 @@
  .post {
   display: flex;
   flex-direction: column;
+  flex-basis: fit-content;
   height: 11.25em;
   justify-content: center;
   width: 21.875em;
