@@ -3,20 +3,20 @@
 
 <div class="signUp">
   <div class="titlePost">
-  <h1>Open Mic Sign Up</h1>
+  <h1>Open Mic Registrations</h1>
   </div>
 
   <div class="buttonSignUp">
   <% if user_signed_in? %>
-      <%= link_to "Sign Up Here", new_post_path, class: "btn-primary btn-lg" %>
+      <%= link_to "Pre-register", new_post_path, class: "btn-primary btn-lg" %>
     <% end %>
   </div>
     <hr>
       <div class="post-section">
         <% if user_signed_in? %>
-          <h2>Current Registrations</h2>
+          <h2>Registrations</h2>
             <h5>Equipment</h5>
-            <p>Roland keyboard, electronic and acoustic guitar, monitor, speaker, 9 track mixer with compression, 2 sennheiser microphones with stands. (All with cables not wireless)</p>
+            <p>Roland keyboard, acoustic guitar, monitor, speaker, 9 track mixer with compression, 2 microphones with stands. (All with cables not wireless)</p>
               <% @posts.each do |post| %>
                 <div class="post">
                   <%= render post %>
@@ -25,8 +25,8 @@
               <% end %>
           <% else %>
               <hr>
-              <h4 style="margin-bottom:1.5em;">Sign up with your email and a simple password to register</h4>
-              <%= link_to "Sign Up", new_user_registration_path, class: "btn-primary btn-lg" %>
+              <h4 style="margin-bottom:1.5em;">Pre-register with your email for a guaranteed spot!</h4>
+              <%= link_to "Pre-register", new_user_registration_path, class: "btn-primary btn-lg" %>
           <% end %>
     </div>
   <hr>
