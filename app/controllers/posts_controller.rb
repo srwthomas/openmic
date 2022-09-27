@@ -34,6 +34,7 @@ class PostsController < ApplicationController
       if @post.save
         format.html { redirect_to post_url(@post), notice: "Post was successfully created." }
         format.json { render :show, status: :created, location: @post }
+        PostMailer.with(post: @post).new_post_email.deliver_later
       else
         format.html { render :new, status: :unprocessable_entity }
         format.json { render json: @post.errors, status: :unprocessable_entity }
